@@ -54,7 +54,7 @@ $("#InicioSesion").click(() => {
     else if (usuario=="USUARIO3" && password=="CONTRASENA3") { 
         window.location="http://localhost:8085/pruebanav.html"; }
     else{
-        window.location="http://localhost:8085/404.html";
+        window.location="http://localhost:8085/usuarioocontraseña.html";
     }
 
     //return window.location.href = "/pages/ArbolNavegacion.html";
