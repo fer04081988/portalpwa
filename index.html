@@ -1,135 +1,35 @@
-<!DOCTYPE html>
-<html lang="es">
-
+<!doctype html>
+<html lang="en">
 <head>
-	<title>AUTOSERVICIOS</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="img/ITK_ico.png" />
-	<!--===============================================================================================-->
-	<!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"> -->
-	<!--===============================================================================================-->
-	<!-- <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"> -->
-	<!--===============================================================================================-->
-	<!-- <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css"> -->
-	<!--===============================================================================================-->
-	<!-- <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css"> -->
-	<!--===============================================================================================-->
-	<!-- <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css"> -->
-	<!--===============================================================================================-->
-	<!-- <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css"> -->
-	<!--===============================================================================================-->
-	<!-- <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css"> -->
-	<!--===============================================================================================-->
-	<!-- <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css"> -->
-	<!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="css/util.css"> 
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!--===============================================================================================-->
-</head>
+  <meta charset="utf-8">
+  <title>PWA</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height, viewport-fit=cover">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+  
 
+  <!--===============================================================================================-->
+	<meta name="apple-mobile-web-app-capable" content="yes">	
+
+	<link rel="apple-touch-icon" href="assets/img/icons/icon-192x192.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/icons/icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/icon-192x192.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="assets/img/icons/icon-152x152.png">
+	
+	<link rel="apple-touch-startup-image" href="assets/img/icons-ios/apple-launch-640x1136.png">	
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" href="assets/img/icons-ios/apple-launch-1242x2688.png"><!-- iPhone Xs Max (1242px x 2688px) --> 
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" href="assets/img/icons-ios/apple-launch-828x1792.png"><!-- iPhone Xr (828px x 1792px) --> 
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="assets/img/icons-ios/apple-launch-1125x2436.png"><!-- iPhone X, Xs (1125px x 2436px) --> 
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" href="assets/img/icons-ios/apple-launch-1242x2208.png"><!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) --> 
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="assets/img/icons-ios/apple-launch-750x1334.png"><!-- iPhone 8, 7, 6s, 6 (750px x 1334px) --> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <!--===============================================================================================-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjZ_ekZXiQ5m1xCmr77GSio2Qq6WOVT8Q&callback=initMap"  type="text/javascript"></script>
+<link rel="stylesheet" href="styles.d473ee87369bb9c81171.css"></head>
 <body>
-	<header class="header">
-		<div class="headContent">
-		  <div class="hamburgermenu"> <a href="#" id="hamburger"><i class="fas fa-bars txtWhite"></i></a> </div>
-		  <div class="headerLogo"> <a href="index.html"><img src="img/logo_italika.png" id="imgLogo"></a> </div>
-		  <div class="headerUser">
-			<div class="nameUsr"><span>Monica</span></div>
-		  </div>
-		</div>
-	  </header>
-
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-					
-					<span class="login100-form-title p-b-43" style="padding-bottom: 43px;">
-						<!-- ITALIKA AUTOSERVICIOS -->
-						<img src="img/ITK_logo.png" style="width: 200px" class="center">
-					</span>
-
-
-					<div class="wrap-input100 validate-input" data-validate="El usuario es requerido">
-						<input class="input100" type="text" name="usuario" id="usuario">
-						<span class="focus-input100"></span>
-						<span class="label-input100">Usuario</span>
-					</div>
-
-
-					<div class="wrap-input100 validate-input" data-validate="La contraseña es requerida">
-						<input class="input100" type="password" name="pass" id="pass">
-						<span class="focus-input100"></span>
-						<span class="label-input100">Contraseña</span>
-					</div>
-
-					<div class="flex-sb-m w-full p-t-3 p-b-32" style="    padding-bottom: 32px;; padding-top: 3px;">
-						<!-- <div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Recortar contraseña
-							</label>
-						</div> -->
-
-						<!-- <div>
-							<a href="#" class="txt1">
-								Olvide mi contraseña
-							</a>
-						</div> -->
-					</div>
-
-
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" id="InicioSesion">
-							INICIO DE SESIÓN
-						</button>
-					</div>
-
-					<!-- <div class="text-center p-t-46 p-b-20">
-						<span class="txt2">
-							or sign up using
-						</span>
-					</div>
-
-					<div class="login100-form-social flex-c-m">
-						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
-							<i class="fa fa-facebook-f" aria-hidden="true"></i>
-						</a>
-
-						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</a>
-					</div> -->
-				</form>
-
-				<!--div class="login100-more" style="background-image: url('img/ITK__.png');">
-				</div-->
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-	<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<!--===============================================================================================-->
-	<!-- <script src="vendor/animsition/js/animsition.min.js"></script> -->
-	<!--===============================================================================================-->
-	<!-- <script src="vendor/bootstrap/js/popper.js"></script> -->
-	<!-- <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
-	<!--===============================================================================================-->
-	<!-- <script src="vendor/select2/select2.min.js"></script> -->
-	<!--===============================================================================================-->
-	<!-- <script src="vendor/daterangepicker/moment.min.js"></script> -->
-	<!-- <script src="vendor/daterangepicker/daterangepicker.js"></script> -->
-	<!--===============================================================================================-->
-	<!-- <script src="vendor/countdowntime/countdowntime.js"></script> -->
-	<!--===============================================================================================-->
-	<script src="js/login.js"></script>
-
-</body>
-
+  <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+<script src="runtime-es2015.1eba213af0b233498d9d.js" type="module"></script><script src="runtime-es5.1eba213af0b233498d9d.js" nomodule defer></script><script src="polyfills-es5.9e286f6d9247438cbb02.js" nomodule defer></script><script src="polyfills-es2015.690002c25ea8557bb4b0.js" type="module"></script><script src="scripts.a55bb64091fab5cb8c29.js" defer></script><script src="main-es2015.cb104b1e47ba7e99f05b.js" type="module"></script><script src="main-es5.cb104b1e47ba7e99f05b.js" nomodule defer></script></body>
 </html>
